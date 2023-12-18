@@ -142,6 +142,11 @@ tbody tr:last-of-type {
 	border-bottom: 2px solid #3f6bca;
 }
 
+.news h2 {
+	background-color: #a3a3a3;
+	text-transform: none;
+}
+
 /* FORM */
 input {
 	padding: 5px;
@@ -195,5 +200,89 @@ footer a {
 	header nav li {
 		display: inline-block;
 		margin: 0 0.8rem;
+	}
+
+	h1 {
+		font-size: 4.5rem;
+	}
+	main article h2 {
+		font-size: 2rem;
+		font-weight: 600;
+		margin-bottom: 0.7rem;
+	}
+	table {
+		margin: 6rem auto;
+	}
+	input {
+		width: 70%;
+		padding: 1rem;
+	}
+	button {
+		padding: 10px 20px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	body {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	header {
+		text-align: left;
+		position: relative;
+	}
+	header div,
+	header nav {
+		display: inline-block;
+		margin-right: -4px;
+		width: 50%;
+		font-size: 1.7rem;
+	}
+
+	header div img {
+		margin: 0;
+	}
+	header div p {
+		/* display: inline-block; */
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 260px;
+		margin: 0;
+	}
+	header nav {
+		text-align: right;
+		top: 50%;
+		transform: translateY(-50%);
+		position: absolute;
+		right: 21px;
+	}
+	main {
+		padding: 2rem;
+		vertical-align: top;
+	}
+	main li {
+		margin-bottom: 5px;
+	}
+
+	main table {
+		width: 70%;
+	}
+
+	iframe,
+	.news {
+		width: 50%;
+		display: inline-block;
+		margin-right: -4px;
+		margin-bottom: 0;
+	}
+	.news {
+		margin-top: -10px;
+	}
+
+	aside div {
+		width: 33.33333333%;
+		display: inline-block;
+		margin-right: -4px;
 	}
 }
